@@ -1,0 +1,15 @@
+extends layout
+block content
+    .row
+        form.form-inline(action='register' , method='post')
+          .form-group
+            label(for='name') name:
+            |           
+            input.form-control.form-control-lg(placeholder='name', type='text' ,name='name')
+          |             
+          .form-group
+            label(for='email') email:
+            |           
+            input.form-control.form-control-lg(placeholder='@gmail.com', type='text' ,name='email' )
+            |        
+          button.btn.btn-success.btn-lg(type='submit') Let us go
