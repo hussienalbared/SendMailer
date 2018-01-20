@@ -41,16 +41,16 @@ app.post('/contact/send',(req,res)=>{
         {
         service:'Gmail',
         auth:{
-            user:'generalassin@gmail.com',
-            pass:'general123456789'
+            user:'*',
+            pass:'*'
         }
 
 
         }
     );
     var mailOptions={
-from:'generalassin2016 <generalassin@gmail.com>',
-to:  'generalassin@gmail.com',
+from:'*',
+to:  '*',
 subject:'node mailer',
 text:req.body.message,
 html:req.body.message
